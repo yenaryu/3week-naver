@@ -668,7 +668,6 @@ display: inline-block;
 }
 
 .sc-shop{
-    overflow: hidden;
     width: 350px;
     height: 1809px;
     background-color: #fff;
@@ -743,10 +742,10 @@ display: inline-block;
 
 
 
-.sc-shop .shop-content{overflow: hidden;
-    height: 1763px;
+.sc-shop .shop-content{
+    height: 1820px;
     border: 1px solid #e4e8eb;}
-.sc-shop .group-mall{overflow: hidden;
+.sc-shop .group-mall{
     padding: 12px 4px 11px 10px;
     background-color: #f7f9fa;
     border-bottom: 1px solid #dae1e6;
