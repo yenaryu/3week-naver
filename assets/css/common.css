@@ -1,0 +1,64 @@
+/* 누구나 쓸 수 있는 공통 소스를 여기에 사용한다 */
+
+
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.wrapper{min-width: 1190px;}
+
+
+.blind{ position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; }
+
+
+/* 이미지효과 */
+.thumb-bd{display: block; position: relative;}
+.thumb-bd::after{content: ''; position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0; /* width: 100%;height: 100%; */
+    border: 1px solid #000;
+    opacity: 0 1;
+}
+
+
+/* 내가 background에 넣고 싶은 곳에 넣기 주유소 1호점 */
+.header .logo a,
+.header .service-area a::after,
+/* .header .service-area .link-start::after,
+.header .service-area .link-junior::after,
+.header .service-area .link-bin::after, */
+.sc-news .group-issue .link-media::after,
+.sc-news .group-title .btn-set.ic-list::after,
+.sc-news .group-title .btn-set.ic-tile::after,
+.sc-news .group-title .btn-set.ic-set::after,
+/* .sc-sidenews .navi .btn-nav.prev::after,
+.sc-sidenews .navi .btn-nav.next::after, */
+.sc-sidenews .navi .btn-nav::after,
+.header .search-area .btn-submit::before,
+.sc-themepost .group-title .btn.theme-set::before,
+.sc-themepost .group-theme .btn-prev,
+.sc-themepost .group-theme .btn-next,
+.sc-themepost .group-list1 .icon,
+.sc-themepost .group-list3 .list3_area1 .icon,
+.sc-themepost .group-list3 .top-title::after,
+.footer .notice_area .link_all::after
+{background-image: url(../images/sp-bg.png); 
+background-size: 457px;
+background-repeat: no-repeat;}
+
+.sc-shop .group-title .shop-title::before,
+.sc-shop .group-title .shop-title::after,
+.sc-shop .group-goods .navi-1 .btn-nav.prev::before,
+.sc-shop .group-goods .navi-1 .btn-nav.next::before,
+.sc-shop .group-goods .navi-2 .btn-nav::before,
+.sc-shop .group-news .news-navi .btn-nav::before,
+.sc-shop .group-mcate .mcate_navi .btn-nav::before,
+.sc-shop .group-cell .cell-top .logo::before,
+.sc-shop .group-cell .cell-navi .btn-nav::before,
+.sc-shop .group-cell .thumb_box .icon,
+.sc-shop .group-cell .thumb_box+.thumb_box::before
+{background-image: url(../images/sp-bg-2.png); 
+    background-size: 107px 101px;
+    background-repeat: no-repeat;}
