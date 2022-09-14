@@ -1,6 +1,5 @@
 /* 누구나 쓸 수 있는 공통 소스를 여기에 사용한다 */
 
-
 body{
     font-size: 12px;
     line-height: 16px;
@@ -18,23 +17,33 @@ body{
 .thumb-bd{display: block; position: relative;}
 .thumb-bd::after{content: ''; position: absolute; 
     top: 0; left: 0; right: 0; bottom: 0; /* width: 100%;height: 100%; */
-    border: 1px solid #000;
-    opacity: 0 1;
+    border: 1px solid rgba(0,0,0,.1);
 }
 
 
 /* 내가 background에 넣고 싶은 곳에 넣기 주유소 1호점 */
 .header .logo a,
 .header .service-area a::after,
-/* .header .service-area .link-start::after,
-.header .service-area .link-junior::after,
-.header .service-area .link-bin::after, */
+.header .gnb-list01 .gnb-txt.mail::before,
+.header .gnb-list01 .gnb-txt.shop::before,
+.header .gnb-list01 .gnb-txt.shoplv::before,
+.header .gnb-list01 .gnb-txt.tv::before,
+.header .btn-more::after,
+.header .search-area .auto,
+.header .search-area .keyboard,
+.header .temp-wrap .max-temp::before,
+.group-title .link-title::before,
+.group-title .link-title::after,
+.sc-news .group-list .move-btn::after,
+.sc-login .link-login::before,
+.sc-themepost .group-list3 .top-title::after,
+.sc-login .sub-area .link-join::before,
+.sc-login .sub-area .link-id::before,
+.sc-login .sub-area .link-find,
 .sc-news .group-issue .link-media::after,
 .sc-news .group-title .btn-set.ic-list::after,
 .sc-news .group-title .btn-set.ic-tile::after,
 .sc-news .group-title .btn-set.ic-set::after,
-/* .sc-sidenews .navi .btn-nav.prev::after,
-.sc-sidenews .navi .btn-nav.next::after, */
 .sc-sidenews .navi .btn-nav::after,
 .header .search-area .btn-submit::before,
 .sc-themepost .group-title .btn.theme-set::before,

@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>네이버 클론코딩</title>
+    <title>NAVER</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <div class="wrapper">
-        <header><div class="header">
+        <header class="header">
             <div class="group-flex1">
                 <div class="inner">
-                    <h1 class="logo"><a href=""><span class="blind">네이버</span>
-                    </a></h1>
+                    <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
                     <div class="search-area">
                         <form action="" method="get">
                             <fieldset>
                                 <legend class="blind">검색</legend>
-                                <input type="text" class="input-text">
-                                <button class="btn-submit"><span class="blind">검색</span></button>
+                                <div class="txt-box">
+                                    <input type="text" class="input-text">
+                                    <button class="btn-submit"><span class="blind">검색</span></button>
+                                </div>
                             </fieldset>
                         </form>
+                        <button class="keyboard-box">
+                            <span class="blind">키보드</span>
+                            <span class="keyboard"></span>
+                        </button>
+                        <button class="auto-box">
+                            <span class="blind">자동완성</span>
+                            <span class="auto"></span>
+                        </button>
                     </div>
                     <div class="service-area">
                         <a href="" class="link-start">네이버를 시작페이지로</a><i class="bar"></i>
@@ -34,22 +44,44 @@
             <div class="group-flex2">
                 <div class="inner">
                     <nav class="gnb-area">
-                        <ul class="gnb-list">
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
-                            <li class="gnb-item"><a href="">메일</a></li>
+                        <ul class="gnb-list01">
+                            <li class="gnb-item"><a href="" class="gnb-txt mail">메일</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">카페</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">블로그</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">지식iN</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt shop"><span class="blind">쇼핑</span></a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt shoplv"><span class="blind">쇼핑라이브</span></a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">Pay</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt tv">TV</a></li>
                         </ul>
+                        <ul class="gnb-list02">
+                            <li class="gnb-item"><a href="" class="gnb-txt">사전</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">뉴스</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">증권</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">부동산</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">지도</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">VIBE</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">도서</a></li>
+                            <li class="gnb-item"><a href="" class="gnb-txt">웹툰</a></li>
+                        </ul>
+                        <button class="btn-more">더보기</button>
                     </nav>
                     <div class="weather-area">
-                        날씨영역
+                        <div class="weather-box">
+                            <div class="now-wrap">
+                                <strong class="now-temp">26.5°</strong>
+                                <strong class="condition">구름많음</strong>
+                            </div>
+                            <div class="temp-wrap">
+                                <span class="min-temp">19.0°</span>
+                                <span class="max-temp">29.0°</span>
+                            </div>
+                            <span class="position">목동</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div></header>
+        </header>
 
         
         <main class="container">
@@ -66,7 +98,7 @@
                     <div class="group-issue">
                         <div class="issue-area">
                             <a href="" class="link-media">연합뉴스</a>
-                            <a href="" class="link-issue">오늘부터 50대도 접종</a>
+                            <a href="" class="link-issue">尹대통령 해외순방 후 여야 대표들과 회동 추진될 듯</a>
                         </div>
                         <div class="direct-area">
                             <a href="" class="link-home">뉴스홈</a>
@@ -79,8 +111,8 @@
                     <div class="group-title">
                         <a href="" class="link-title">뉴스스탠드</a>
                         <div class="sort-area">
-                            <a href="" class="btn-sort active">구독한 언론사</a>
-                            <a href="" class="btn-sort">전체 언론사</a>
+                            <a href="" class="btn-sort">구독한 언론사</a>
+                            <a href="" class="btn-sort active">전체 언론사</a>
                         </div>
                         <div class="set-area">
                             <a href="" class="btn-set ic-list"><span class="blind">리스트형</span></a>
@@ -91,27 +123,39 @@
                     
                     <div class="group-list">
                         <ul class="media-list">
-                            <li class="media-item">
-                                <a href="">
-                                    <img src="./assets/images/news.png" alt="">
-                                </a>
-                            </li>
-                            <li class="media-item">
-                                <a href="">
-                                    <img src="./assets/images/news.png" alt="">
-                                </a>
-                            </li>
-                            <li class="media-item">
-                                <a href="">
-                                    <img src="./assets/images/news.png" alt="">
-                                </a>
-                            </li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news1.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news2.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news3.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news4.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news5.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news6.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news7.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news8.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news9.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news10.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news11.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news12.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news13.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news14.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news15.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news16.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news17.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news18.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news19.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news20.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news21.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news22.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news23.png" alt=""></a></li>
+                            <li class="media-item"><a href=""><img src="./assets/images/news24.png" alt=""></a></li>
                         </ul>
 
                         <i class="vt-line vt1"></i><i class="vt-line vt2"></i><i class="vt-line vt3"></i><i class="vt-line vt4"></i><i class="vt-line vt5"></i>
                         <i class="hr-line hr1"></i><i class="hr-line hr2"></i><i class="hr-line hr3"></i>
+
+                        <a href="#" class="move-btn prev"><span class="blind">이전</span></a>
+                        <a href="#" class="move-btn next"><span class="blind">다음</span></a>
                     </div>
-                    </section>
+                </section>
 
 
                     <section class="sc-themepost">
@@ -538,7 +582,8 @@
                        </div>
                        <div class="group-goods">
                            <div class="navi-1">
-                               <span class="num">1 / 18</span>
+                               <span class="num active">1</span>
+                               <span class="num">/ 18</span>
                                <div class="btn_box">
                                    <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
                                    <a href="" class="btn-nav next"><span class="blind">다음</span></a>
@@ -694,7 +739,8 @@
                            </div>
                            <div class="navi-2">
                                <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
-                               <span class="num">1 / 18</span>
+                               <span class="num active">1</span>
+                               <span class="num">/ 18</span>
                                <a href="" class="btn-nav next"><span class="blind">다음</span></a>
                            </div>
                        </div>
@@ -705,7 +751,8 @@
                             
                                 <div class="news-navi">
                                     <div class="num-box">
-                                        <span class="news-num">1 / 10</span>
+                                        <span class="news-num active">1</span>
+                                        <span class="news-num">/ 10</span>
                                     </div>
                                     <div class="news-btn">
                                         <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
@@ -771,7 +818,8 @@
                             </div>   
                             <div class="mcate_navi">
                                 <div class="num_box">
-                                    <span class="num">1 / 10</span>
+                                    <span class="num active">1</span>
+                                    <span class="num">/ 10</span>
                                 </div>
                                 <div class="btn_box">
                                     <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
@@ -811,7 +859,8 @@
                                
                                <div class="cell-navi">
                                     <div class="num-box">
-                                        <span class="num">1 / 10</span>
+                                        <span class="num active">1</span>
+                                        <span class="num">/ 10</span>
                                     </div>
                                     <div class="cell-btn">
                                         <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
